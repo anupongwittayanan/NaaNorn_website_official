@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="light" lang="th">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>สถานที่ท่องเที่ยวใกล้เคียง - Naa-Norn Pool Villa Saraburi</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5de619",
+                        "primary-dark": "#4ac210",
+                        "background-light": "#FDFAF5",
+                        "background-dark": "#162111",
+                        "cream": "#F5EFE6",
+                        "sand": "#E8E2D7",
+                        "text-main": "#2C3329",
+                        "text-soft": "#5A6655"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "IBM Plex Sans Thai", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-text-main dark:text-white overflow-hidden h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-sand/30 dark:border-white/10">
+<div class="flex items-center justify-center px-4 py-3 w-full max-w-screen-md mx-auto">
+<h1 class="text-base sm:text-lg font-bold text-text-main dark:text-white truncate text-center">สถานที่ท่องเที่ยวใกล้เคียง</h1>
+</div>
+</header>
+
+<!-- Navigation Bar -->
+<nav class="sticky top-[57px] sm:top-14 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-sand/30 dark:border-white/10">
+<div class="w-full max-w-screen-md mx-auto px-2 sm:px-4 py-2">
+<div class="flex justify-around">
+<a href="index.html" class="py-2 sm:py-3 px-1 sm:px-2 text-center text-xs sm:text-sm font-medium text-text-soft dark:text-gray-400 hover:text-primary-dark">
+<span class="material-symbols-outlined text-[18px] sm:text-xs block mx-auto mb-1">home</span>
+<span class="hidden sm:inline">หน้าหลัก</span><span class="sm:hidden">หน้าแรก</span>
+</a>
+<a href="nearby-attractions.html" class="py-2 sm:py-3 px-1 sm:px-2 text-center text-xs sm:text-sm font-medium text-primary-dark border-b-2 border-primary-dark">
+<span class="material-symbols-outlined text-[18px] sm:text-xs block mx-auto mb-1">location_on</span>
+<span class="hidden sm:inline">สถานที่ใกล้เคียง</span><span class="sm:hidden">ที่เที่ยว</span>
+</a>
+<a href="house-rules.html" class="py-2 sm:py-3 px-1 sm:px-2 text-center text-xs sm:text-sm font-medium text-text-soft dark:text-gray-400 hover:text-primary-dark">
+<span class="material-symbols-outlined text-[18px] sm:text-xs block mx-auto mb-1">gavel</span>
+<span class="hidden sm:inline">กฎระเบียบ</span><span class="sm:hidden">กฎบ้าน</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- Main Content Area (Scrollable) -->
+<main class="flex-1 overflow-y-auto no-scrollbar relative flex flex-col w-full max-w-screen-md mx-auto pb-20 sm:pb-24">
+<!-- Map Integration Section -->
+<div class="px-4 pt-4 pb-2 w-full">
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-sm ring-1 ring-black/5 dark:ring-white/10 group">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21862.226396162092!2d100.92187129111151!3d14.384903988801012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d95cb768e640d%3A0x205d5c571e60b67b!2z4LiZ4LmI4Liy4LiZ4Lit4LiZIOC4nuC4ueC4peC4p-C4tOC4peC4peC5iOC4siDguKrguKPguLDguJrguLjguKPguLU6TmFhLU5vcm4gUG9vbCBWaWxsYSBTYXJhYnVyaQ!5e0!3m2!1sth!2sth!4v1774031233824!5m2!1sth!2sth" class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- Villa Pin (Center) -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-10">
+<div class="bg-primary text-background-dark p-1.5 sm:p-2 rounded-full shadow-lg ring-4 ring-white/30 dark:ring-black/30 animate-bounce">
+<span class="material-symbols-outlined text-xl sm:text-2xl filled">home_pin</span>
+</div>
+<div class="mt-1 px-2 py-1 bg-white/90 dark:bg-black/80 backdrop-blur rounded-md text-[9px] sm:text-[10px] font-bold shadow-sm whitespace-nowrap">
+Naa-Norn Pool Villa
+</div>
+</div>
+</div>
+<p class="mt-3 px-1 text-xs sm:text-sm text-text-soft dark:text-gray-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">info</span>
+สำรวจสถานที่ท่องเที่ยวที่น่าสนใจรอบๆ วิลล่า
+</p>
+</div>
+<!-- Attraction List Header -->
+<div class="sticky top-0 z-10 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm px-4 pt-4 pb-2">
+<h2 class="text-lg sm:text-xl font-bold text-text-main dark:text-white">
+สถานที่ยอดนิยม <span class="text-xs sm:text-sm font-normal text-text-soft dark:text-gray-400 ml-1">(สถานที่ใกล้เคียง)</span>
+</h2>
+</div>
+<!-- Attraction Cards List -->
+<div class="flex flex-col gap-3 sm:gap-4 px-4 pb-4">
+<!-- Card 1: Lion Park -->
+<article class="bg-white dark:bg-white/5 rounded-xl p-3 shadow-[0_2px_8px_rgba(0,0,0,0.04)] dark:shadow-none dark:border dark:border-white/5 flex flex-col gap-3">
+<div class="relative w-full aspect-[2/1] rounded-lg overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Sri Ayuthaya Lion Park" style="background-image: url('image_attraction/image_ayutthaya lion park.webp')">
+</div>
+<div class="absolute top-2 left-2 px-2 py-1 bg-white/90 dark:bg-black/60 backdrop-blur rounded text-[10px] sm:text-xs font-semibold text-amber-700 dark:text-amber-300 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs sm:text-sm">pets</span> Wildlife
+</div>
+</div>
+<div class="flex justify-between items-start gap-2">
+<div class="flex flex-col gap-1">
+<h3 class="text-sm sm:text-base font-bold leading-tight text-text-main dark:text-white">ศรีอยุธยา ไลอ้อน ปาร์ค</h3>
+<p class="text-[10px] sm:text-xs text-text-soft dark:text-gray-400">SRIAYUTHAYA LION PARK</p>
+<div class="flex items-center gap-1 mt-1 text-[10px] sm:text-xs font-medium text-emerald-600 dark:text-primary">
+<span class="material-symbols-outlined text-xs sm:text-sm">near_me</span> 29 กม. away
+</div>
+</div>
+<a href="https://maps.app.goo.gl/NSdoLaxAGS7Pw3vU9" class="shrink-0 bg-cream dark:bg-white/10 hover:bg-emerald-50 dark:hover:bg-white/20 text-text-main dark:text-white px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg flex items-center gap-1.5 sm:gap-2 transition-colors text-[10px] sm:text-xs font-semibold border border-transparent dark:border-white/10">
+<span class="material-symbols-outlined text-base sm:text-lg text-red-500">pin_drop</span>
+<span class="hidden sm:inline">Maps</span>
+</a>
+</div>
+<p class="text-xs sm:text-sm text-text-soft dark:text-gray-400 line-clamp-2">
+สวนสัตว์เปิดแห่งใหม่ในอยุธยา ชมสิงโตและสัตว์ป่าอย่างใกล้ชิด ถ่ายรูปกับสัตว์น่ารักมากมาย
+</p>
+</article>
+<!-- Card 2: Temple -->
+<article class="bg-white dark:bg-white/5 rounded-xl p-3 shadow-[0_2px_8px_rgba(0,0,0,0.04)] dark:shadow-none dark:border dark:border-white/5 flex flex-col gap-3">
+<div class="relative w-full aspect-[2/1] rounded-lg overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Ornate golden Thai temple architecture against a blue sky" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyzHz66Tr-7cpW4N7R0XEguPwMTsNcxSM8Ukd6YBokVy5wCU5Dz3O5RzxIhbXNkETJuR85vIUIyNvP_X05MwJLAGsHcEvZIDcwTCxjXr2DJT6NnoKHGcDPnCYjmF0y2Xv0E8hMtuBol_Hi3RSzfaolsqgIFcm0G8-IlQS2uRtfhDByFiY-i6MVgo9yLExTlt8X1M8kVPicp-x_uk-bUlHe1y7NDWe8ii7cBhtDVWuQAJhLJUtY6wOqQC5ag_LwD1Rbrxi3Z_4vpNU');">
+</div>
+<div class="absolute top-2 left-2 px-2 py-1 bg-white/90 dark:bg-black/60 backdrop-blur rounded text-[10px] sm:text-xs font-semibold text-orange-700 dark:text-orange-300 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs sm:text-sm">temple_buddhist</span> Culture
+</div>
+</div>
+<div class="flex justify-between items-start gap-2">
+<div class="flex flex-col gap-1">
+<h3 class="text-sm sm:text-base font-bold leading-tight text-text-main dark:text-white">วัดพระพุทธบาท</h3>
+<p class="text-[10px] sm:text-xs text-text-soft dark:text-gray-400">Wat Phra Phutthabat</p>
+<div class="flex items-center gap-1 mt-1 text-[10px] sm:text-xs font-medium text-emerald-600 dark:text-primary">
+<span class="material-symbols-outlined text-xs sm:text-sm">near_me</span> 50 กม. away
+</div>
+</div>
+<a href="https://maps.app.goo.gl/v5Pg1JAfAzkho74i7" class="shrink-0 bg-cream dark:bg-white/10 hover:bg-emerald-50 dark:hover:bg-white/20 text-text-main dark:text-white px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg flex items-center gap-1.5 sm:gap-2 transition-colors text-[10px] sm:text-xs font-semibold border border-transparent dark:border-white/10">
+<span class="material-symbols-outlined text-base sm:text-lg text-red-500">pin_drop</span>
+<span class="hidden sm:inline">Maps</span>
+</a>
+</div>
+<p class="text-xs sm:text-sm text-text-soft dark:text-gray-400 line-clamp-2">
+สถานที่ศักดิ์สิทธิ์คู่บ้านคู่เมืองสระบุรี กราบไหว้ขอพรเพื่อความเป็นสิริมงคล
+</p>
+</article>
+<!-- Card 3: Temple -->
+<article class="bg-white dark:bg-white/5 rounded-xl p-3 shadow-[0_2px_8px_rgba(0,0,0,0.04)] dark:shadow-none dark:border dark:border-white/5 flex flex-col gap-3">
+<div class="relative w-full aspect-[2/1] rounded-lg overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="วิหารหลวงพ่อสำเร็จศักดิ์สิทธิ์" style="background-image: url('image_attraction/image_samrej.jpg')">
+</div>
+<div class="absolute top-2 left-2 px-2 py-1 bg-white/90 dark:bg-black/60 backdrop-blur rounded text-[10px] sm:text-xs font-semibold text-orange-700 dark:text-orange-300 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs sm:text-sm">temple_buddhist</span> Culture
+</div>
+</div>
+<div class="flex justify-between items-start gap-2">
+<div class="flex flex-col gap-1">
+<h3 class="text-sm sm:text-base font-bold leading-tight text-text-main dark:text-white">วิหารหลวงพ่อสำเร็จศักดิ์สิทธิ์</h3>
+<p class="text-[10px] sm:text-xs text-text-soft dark:text-gray-400">วิหารหลวงพ่อสำเร็จศักดิ์สิทธิ์</p>
+<div class="flex items-center gap-1 mt-1 text-[10px] sm:text-xs font-medium text-emerald-600 dark:text-primary">
+<span class="material-symbols-outlined text-xs sm:text-sm">near_me</span> 17 กม. away
+</div>
+</div>
+<a href="https://maps.google.com" class="shrink-0 bg-cream dark:bg-white/10 hover:bg-emerald-50 dark:hover:bg-white/20 text-text-main dark:text-white px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg flex items-center gap-1.5 sm:gap-2 transition-colors text-[10px] sm:text-xs font-semibold border border-transparent dark:border-white/10">
+<span class="material-symbols-outlined text-base sm:text-lg text-red-500">pin_drop</span>
+<span class="hidden sm:inline">Maps</span>
+</a>
+</div>
+<p class="text-xs sm:text-sm text-text-soft dark:text-gray-400 line-clamp-2">
+สถานที่ศักดิ์สิทธิ์คู่บ้านคู่เมือง กราบไหว้ขอพรเพื่อความเป็นสิริมงคล
+</p>
+</article>
+<!-- Card 4: Local Cafe -->
+<article class="bg-white dark:bg-white/5 rounded-xl p-3 shadow-[0_2px_8px_rgba(0,0,0,0.04)] dark:shadow-none dark:border dark:border-white/5 flex flex-col gap-3">
+<div class="relative w-full aspect-[2/1] rounded-lg overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Cozy interior of a modern cafe with wooden furniture and plants" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4M3gQv2GTIWaL_QfIwN_RIooKGHXLNUkwHX9B4TSWMKlFV7RpeZxVHuTmkjnF76eXTjWMpPQ9mNXyt2ARYn3zuLu9zrLkqxN4poP0poGIRe4aSWMwpYIacUfuVzjRiG7Rbf8qSEPEi8nSfQ10yj1UTxZ_hvDsspQmmPCiOIq7fyYFx_YJCNl6agB8Rl-7yO12siRPn7Mlslig2VdeBl5hIfNtpeYqgDgy75OTPiIxsDPjg97w7t3AG7XHhInAryp0Npt4SIBdlns');">
+</div>
+<div class="absolute top-2 left-2 px-2 py-1 bg-white/90 dark:bg-black/60 backdrop-blur rounded text-[10px] sm:text-xs font-semibold text-amber-700 dark:text-amber-300 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs sm:text-sm">coffee</span> Dining
+</div>
+</div>
+<div class="flex justify-between items-start gap-2">
+<div class="flex flex-col gap-1">
+<h3 class="text-sm sm:text-base font-bold leading-tight text-text-main dark:text-white">Oeimi Café - คาเฟ่สระบุรี</h3>
+<p class="text-[10px] sm:text-xs text-text-soft dark:text-gray-400">Oeimi Café - สระบุรี</p>
+<div class="flex items-center gap-1 mt-1 text-[10px] sm:text-xs font-medium text-emerald-600 dark:text-primary">
+<span class="material-symbols-outlined text-xs sm:text-sm">near_me</span> 14.6 กม. away
+</div>
+</div>
+<a href="https://maps.app.goo.gl/keTkUgPBuM6G67GKA" class="shrink-0 bg-cream dark:bg-white/10 hover:bg-emerald-50 dark:hover:bg-white/20 text-text-main dark:text-white px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg flex items-center gap-1.5 sm:gap-2 transition-colors text-[10px] sm:text-xs font-semibold border border-transparent dark:border-white/10">
+<span class="material-symbols-outlined text-base sm:text-lg text-red-500">pin_drop</span>
+<span class="hidden sm:inline">Maps</span>
+</a>
+</div>
+<p class="text-xs sm:text-sm text-text-soft dark:text-gray-400 line-clamp-2">
+คาเฟ่สไตล์ญี่ปุ่น อร่อย อบอุ่น อ้อมกอดด้วยธรรมชาติ จ.สระบุรี
+</p>
+</article>
+<!-- Spacer to ensure last card is not hidden behind floating bottom bar if used, though here we have a fixed footer -->
+<div class="h-4"></div>
+</div>
+</main>
+<!-- Bottom Fixed CTA Bar -->
+<div class="flex-none bg-cream border-t border-sand/30 dark:border-white/10 p-3 sm:p-4 safe-area-pb">
+<a href="https://lin.ee/XIq0Ztq" class="w-full bg-[#06C755] hover:bg-[#05b54d] text-white font-bold text-sm sm:text-base py-3 sm:py-3.5 px-4 sm:px-6 rounded-xl shadow-lg shadow-green-500/20 flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-base sm:text-lg">chat</span>
+<span class="text-sm sm:text-base">ทักไลน์เพื่อจองที่พัก</span>
+</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

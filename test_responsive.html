@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+        
+        .screen-size {
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            body {
+                padding: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 5px;
+            }
+            
+            body {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Design Test</h1>
+        
+        <div class="screen-size">
+            <strong>Current Screen Size:</strong> <span id="size-info">Detecting...</span>
+        </div>
+        
+        <div class="test-section">
+            <h2>How to Test Responsiveness</h2>
+            <p>This website has been updated with responsive design features. To test:</p>
+            <ul>
+                <li>Resize your browser window to different sizes</li>
+                <li>Open the pages on different devices (mobile, tablet, desktop)</li>
+                <li>Check that content adapts properly to different screen sizes</li>
+                <li>Verify that navigation remains accessible on all devices</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h2>Test Each Page</h2>
+            <ul>
+                <li><a href="index.html">Home Page (index.html)</a></li>
+                <li><a href="nearby-attractions.html">Nearby Attractions</a></li>
+                <li><a href="house-rules.html">House Rules</a></li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h2>Features Added</h2>
+            <ul>
+                <li>Enhanced viewport meta tag with user-scalable=no for consistent mobile experience</li>
+                <li>Updated container classes to use max-w-screen-md for better responsiveness</li>
+                <li>Improved CSS with responsive media queries for different screen sizes</li>
+                <li>Optimized layout for mobile, tablet, and desktop viewing</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function updateScreenSize() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            let deviceType = '';
+            
+            if (width <= 480) {
+                deviceType = 'Mobile';
+            } else if (width <= 768) {
+                deviceType = 'Tablet';
+            } else {
+                deviceType = 'Desktop';
+            }
+            
+            document.getElementById('size-info').textContent = 
+                `${width} x ${height}px (${deviceType})`;
+        }
+        
+        // Update on load and resize
+        window.addEventListener('load', updateScreenSize);
+        window.addEventListener('resize', updateScreenSize);
+    </script>
+</body>
+</html>

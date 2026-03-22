@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="light" lang="th">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>แกลเลอรี่รูปภาพ - Naa-Norn Pool Villa Saraburi</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#5de619",
+                    "primary-dark": "#4ac210",
+                    "background-light": "#FDFAF5",
+                    "background-dark": "#162111",
+                    "cream": "#F5EFE6",
+                    "sand": "#E8E2D7",
+                    "text-main": "#2C3329",
+                    "text-soft": "#5A6655",
+                },
+                fontFamily: {
+                    "display": ["'IBM Plex Sans Thai'", "'Plus Jakarta Sans'", "sans-serif"],
+                    "sans": ["'IBM Plex Sans Thai'", "'Plus Jakarta Sans'", "sans-serif"],
+                },
+            },
+        },
+    }
+</script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-text-main dark:text-white overflow-hidden h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-sand/30 dark:border-white/10">
+<div class="flex items-center justify-center px-4 py-3 w-full max-w-screen-md mx-auto">
+<a href="index.html" class="absolute left-4 text-text-main dark:text-white">
+<span class="material-symbols-outlined">arrow_back</span>
+</a>
+<h1 class="text-base sm:text-lg font-bold text-text-main dark:text-white truncate text-center">แกลเลอรี่รูปภาพ</h1>
+</div>
+</header>
+
+<!-- Navigation Bar -->
+<nav class="sticky top-[57px] sm:top-14 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-sand/30 dark:border-white/10">
+<div class="w-full max-w-screen-md mx-auto px-2 sm:px-4 py-2">
+<div class="flex justify-around">
+<a href="index.html" class="py-2 sm:py-3 px-1 sm:px-2 text-center text-xs sm:text-sm font-medium text-text-soft dark:text-gray-400 hover:text-primary-dark">
+<span class="material-symbols-outlined text-[18px] sm:text-xs block mx-auto mb-1">home</span>
+<span class="hidden sm:inline">หน้าหลัก</span><span class="sm:hidden">หน้าแรก</span>
+</a>
+<a href="nearby-attractions.html" class="py-2 sm:py-3 px-1 sm:px-2 text-center text-xs sm:text-sm font-medium text-text-soft dark:text-gray-400 hover:text-primary-dark">
+<span class="material-symbols-outlined text-[18px] sm:text-xs block mx-auto mb-1">location_on</span>
+<span class="hidden sm:inline">สถานที่ใกล้เคียง</span><span class="sm:hidden">ที่เที่ยว</span>
+</a>
+<a href="house-rules.html" class="py-2 sm:py-3 px-1 sm:px-2 text-center text-xs sm:text-sm font-medium text-text-soft dark:text-gray-400 hover:text-primary-dark">
+<span class="material-symbols-outlined text-[18px] sm:text-xs block mx-auto mb-1">gavel</span>
+<span class="hidden sm:inline">กฎระเบียบ</span><span class="sm:hidden">กฎบ้าน</span>
+</a>
+</div>
+</div>
+</nav>
+
+<!-- Main Content Area (Scrollable) -->
+<main class="flex-1 overflow-y-auto no-scrollbar relative flex flex-col w-full max-w-screen-md mx-auto">
+<!-- Gallery Grid -->
+<div class="px-4 py-4">
+<div class="grid grid-cols-2 gap-2 auto-rows-[150px] sm:auto-rows-[180px]">
+<!-- Pool View -->
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative group">
+<img alt="สระว่ายน้ำ" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_160648.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">สระว่ายน้ำ</div>
+</div>
+</div>
+
+<!-- Bedroom 1 -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ห้องนอน" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_164438.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ห้องนอน</div>
+</div>
+</div>
+
+<!-- BBQ Area -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="พื้นที่ปิ้งย่าง" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_162903.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">พื้นที่ปิ้งย่าง</div>
+</div>
+</div>
+
+<!-- Living Room -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ห้องนั่งเล่น" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_160614.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ห้องนั่งเล่น</div>
+</div>
+</div>
+
+<!-- Kitchen -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ห้องครัว" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_161038.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ห้องครัว</div>
+</div>
+</div>
+
+<!-- Bedroom 2 -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ห้องนอน 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_164015.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ห้องนอน 2</div>
+</div>
+</div>
+
+<!-- Bedroom 3 -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ห้องนอน 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_164258.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ห้องนอน 3</div>
+</div>
+</div>
+
+<!-- Bathroom -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ห้องน้ำ" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_165409.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ห้องน้ำ</div>
+</div>
+</div>
+
+<!-- Exterior -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ภายนอกบ้าน" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_160720.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ภายนอกบ้าน</div>
+</div>
+</div>
+
+<!-- Dining Area -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="พื้นที่ทานอาหาร" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_161159.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">พื้นที่ทานอาหาร</div>
+</div>
+</div>
+
+<!-- Pool Night View -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="สระว่ายน้ำยามค่ำคืน" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_170752.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">สระว่ายน้ำยามค่ำคืน</div>
+</div>
+</div>
+
+<!-- Garden -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="สวน" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_162207.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">สวน</div>
+</div>
+</div>
+
+<!-- Parking -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ที่จอดรถ" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_160728.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ที่จอดรถ</div>
+</div>
+</div>
+
+<!-- TV Room -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ห้องทีวี" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_165125.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ห้องทีวี</div>
+</div>
+</div>
+
+<!-- Bedroom 4 -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ห้องนอน 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_164358.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ห้องนอน 4</div>
+</div>
+</div>
+
+<!-- Bathroom 2 -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ห้องน้ำ 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_165434.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ห้องน้ำ 2</div>
+</div>
+</div>
+
+<!-- Exterior Night -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ภายนอกยามค่ำคืน" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_170017.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ภายนอกยามค่ำคืน</div>
+</div>
+</div>
+
+<!-- Pool Deck -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ขอบสระว่ายน้ำ" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_162741.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ขอบสระว่ายน้ำ</div>
+</div>
+</div>
+
+<!-- Living Room 2 -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ห้องนั่งเล่น 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_165550.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ห้องนั่งเล่น 2</div>
+</div>
+</div>
+
+<!-- Entrance -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="ทางเข้า" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_154901.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">ทางเข้า</div>
+</div>
+</div>
+
+<!-- More Images -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="เพิ่มเติม" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_164656.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">เพิ่มเติม</div>
+</div>
+</div>
+
+<!-- More Images 2 -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="เพิ่มเติม 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_164927.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">เพิ่มเติม 2</div>
+</div>
+</div>
+
+<!-- More Images 3 -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="เพิ่มเติม 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_170158.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">เพิ่มเติม 3</div>
+</div>
+</div>
+
+<!-- More Images 4 -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="เพิ่มเติม 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_170236.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">เพิ่มเติม 4</div>
+</div>
+</div>
+
+<!-- More Images 5 -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="เพิ่มเติม 5" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_170538.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">เพิ่มเติม 5</div>
+</div>
+</div>
+
+<!-- More Images 6 -->
+<div class="rounded-2xl overflow-hidden relative group">
+<img alt="เพิ่มเติม 6" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="image/IMG_20260316_170719.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="absolute bottom-2.5 left-2.5 text-white text-xs sm:text-sm font-semibold">เพิ่มเติม 6</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
